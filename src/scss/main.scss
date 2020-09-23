@@ -1,7 +1,40 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';
+@import "core/variables";
+@import "core/reset";
+@import "components/links";
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+@import "pages/index";
+
+.btn {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  background-color: #0271bc;
+}
+
+.hero-container {
+  background-image: url(../images/cover.jpg);
+  height: 568px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.hero-text {
+  margin: 0 15px;
+}
+.hero-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-size: 42px;
+}
+.hero-description {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
