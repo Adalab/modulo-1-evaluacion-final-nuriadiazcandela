@@ -120,27 +120,29 @@
   height: 45px;
   color: white;
   border-radius: 22.5px;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   grid-column: 2;
 }
 .footer {
   background-color: #304268;
+  height: 465px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: white;
   line-height: 30px;
   text-align: center;
   padding: 10px 0 45px 0;
 }
-.articles,
+.articles {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
 .twitter {
   font-size: 16px;
   text-transform: uppercase;
-}
-.articles {
-  height: 150px;
-}
-.twitter {
-  height: 90px;
+  padding-bottom: 30px;
 }
 
 .heart {
@@ -151,8 +153,12 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
+  transform: translate(142px, -32px);
 }
 .scroll-arrow-image {
   align-items: center;
   padding: 11px 11px 10px 13px;
+}
+.date {
+  display: inline;
 }
