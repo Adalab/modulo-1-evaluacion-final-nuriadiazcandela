@@ -6,11 +6,12 @@
 @import "layout/footer";
 @import "pages/index";
 
-.btn {
+.menubox {
   position: fixed;
   width: 44px;
   height: 44px;
   background-color: #0271bc;
+  padding: 15px 14px 15px 14px;
 }
 
 .hero-container {
@@ -109,15 +110,17 @@
 .reason-two,
 .reason-three {
   grid-column: 2;
-  font-family: "Roboto", serif;
+  font-family: "Roboto Slab", serif;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
 }
 
-.btn-reasons {
+.more-reasons {
   background-color: #f26002;
+  padding-top: 10px;
   height: 45px;
+  text-align: center;
   color: white;
   border-radius: 22.5px;
   font-family: "Roboto", sans-serif;
