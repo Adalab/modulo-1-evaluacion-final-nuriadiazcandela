@@ -24,7 +24,7 @@
 }
 .hero-text {
   margin: 0 15px;
-  padding-top: 184px;
+  // padding-top: 184px;
 }
 .hero-title {
   text-align: center;
@@ -141,6 +141,10 @@
   text-align: center;
   padding: 10px 0 45px 0;
 }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
 .articles {
   font-size: 16px;
   text-transform: uppercase;
@@ -211,27 +215,113 @@
   .reasons-title {
     padding: 30px 0 45px 0;
   }
-  .scroll-arrow {
-    margin-left: 187px;
-    margin-top: -36px;
-  }
+
   .footer {
     display: flex;
+    flex-direction: row-reverse;
     height: 240px;
     padding: 45px 39px 45px 39px;
-    list-style: none;
-    flex-wrap: wrap;
-  }
-  .footer-container {
-    flex-direction: row;
+    text-align: start;
     justify-content: space-between;
-    flex-grow: 2;
-    align-items: flex-start;
+  }
+  .scroll-arrow {
+    transform: translate(-311px, -69px);
   }
 
+  .footer-container {
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+  }
+  .articles {
+    width: 210px;
+  }
+  .twitter {
+    padding-left: 30px;
+  }
+  .small {
+    width: 279px;
+  }
   .date {
-    width: 30%;
     font-size: 14px;
-    flex-grow: 1;
+  }
+}
+@media all and (min-width: 1280px) {
+  .hero-container {
+    height: 768px;
+  }
+
+  .hero-title {
+    font-size: 100px;
+    line-height: 132px;
+    width: 730px;
+    height: 264px;
+    margin: 384px 275px 0 275px;
+    text-align: center;
+  }
+  .hero-description {
+    height: 32px;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .hero-scroll {
+    padding-top: 10px;
+  }
+  .section-intro {
+    margin: 60px 275px;
+  }
+  .section-top {
+    font-size: 16px;
+  }
+  .section-title {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .section-description {
+    font-size: 20px;
+  }
+  .buttom-go {
+    font-size: 20px;
+    padding: 10px 68px;
+  }
+  .section-reasons {
+    padding: 0 81.2px;
+    height: 427px;
+    grid-template-columns: 353.8px 353.8px 353.8px;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 26.2px;
+  }
+  .reasons-title {
+    font-size: 32px;
+  }
+  .reason-one,
+  .reason-two,
+  .reason-three {
+    font-size: 20px;
+  }
+  .more-reasons {
+    width: 255px;
+    height: 45px;
+    text-transform: capitalize;
+    margin: 16px 45px;
+  }
+  .footer {
+    padding: 45px 370px;
+  }
+  .small {
+    width: 560px;
+  }
+  .scroll-arrow {
+    transform: translate(-253px, -70px);
+  }
+  .footer-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .articles {
+    width: 161px;
+  }
+  .twitter {
+    width: 159px;
   }
 }
