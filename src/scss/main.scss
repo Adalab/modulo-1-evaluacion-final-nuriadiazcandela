@@ -23,6 +23,7 @@
 }
 .hero-text {
   margin: 0 15px;
+  padding-top: 184px;
 }
 .hero-title {
   text-align: center;
@@ -30,6 +31,7 @@
   color: white;
   font-family: "Roboto Slab", serif;
   font-size: 42px;
+  line-height: 55px;
 }
 .hero-description {
   text-align: center;
@@ -37,4 +39,73 @@
   font-family: "Roboto", serif;
   font-size: 16px;
   margin-top: 10px;
+}
+.hero-scroll {
+  display: flex;
+  justify-content: center;
+  padding-top: 53px;
+}
+.scroll-down {
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.scroll-down-image {
+  align-items: center;
+  position: absolute;
+  padding: 18px 12px 15px 13px;
+}
+.section-intro {
+  margin: 0 15px;
+  padding: 30px 0 45px 0;
+}
+.section-top {
+  width: 90px;
+  height: 30px;
+  color: #8ccbea;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+}
+.section-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+}
+.section-description {
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  line-height: 1.67;
+  padding: 15px 0 30px 0;
+}
+.btn-go {
+  width: 76px;
+  height: 45px;
+  border-radius: 22.5px;
+  font-family: "Roboto Slab", serif;
+  color: #f26002;
+  font-size: 20px;
+  border: solid 2px #f26002;
+  background-color: white;
+}
+.section-reasons {
+  margin: 0 15px;
+  background-color: #eff9ff;
+  height: 624px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.reasons-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  row-gap: 20px;
+}
+.btn-reasons {
+  background-color: #f26002;
+  color: white;
+  border-radius: 22.5px;
+  font-family: "Roboto", serif;
+  font-size: 20px;
 }
