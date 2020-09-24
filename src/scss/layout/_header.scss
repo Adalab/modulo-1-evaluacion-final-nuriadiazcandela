@@ -1,0 +1,84 @@
+.menubox {
+  position: fixed;
+  width: 44px;
+  height: 44px;
+  background-color: $color-blue;
+  padding: 15px 14px 15px 14px;
+}
+
+.hero-container {
+  background-image: url(../images/cover.jpg);
+  height: 568px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.hero-text {
+  margin: 0 15px;
+  // padding-top: 184px;
+}
+.hero-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  font-family: $font-secundary;
+  font-size: 42px;
+  line-height: 55px;
+}
+
+.hero-description {
+  text-align: center;
+  color: $color-white;
+  font-family: $font-primary;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.hero-scroll {
+  display: flex;
+  justify-content: center;
+  padding-top: 53px;
+}
+.scroll-down {
+  background-color: $color-white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.scroll-down-image {
+  align-items: center;
+  position: absolute;
+  padding: 18px 12px 15px 13px;
+}
+@media all and (min-width: 768px) {
+  .hero-title {
+    font-size: 80px;
+    line-height: 106px;
+  }
+  .hero-description {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .hero-container {
+    height: 768px;
+  }
+
+  .hero-title {
+    font-size: 100px;
+    line-height: 132px;
+    width: 730px;
+    height: 264px;
+    margin: 384px 275px 0 275px;
+    text-align: center;
+  }
+  .hero-description {
+    height: 32px;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .hero-scroll {
+    padding-top: 10px;
+  }
+}
