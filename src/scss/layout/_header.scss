@@ -14,64 +14,60 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-}
-.hero-text {
-  margin: 0 15px;
-  align-self: flex-end;
-}
-.hero-title {
-  text-align: center;
-  text-transform: uppercase;
-  color: $color-white;
-  font-family: $font-secundary;
-  font-size: 42px;
-  line-height: 55px;
-}
-.hero-description {
-  text-align: center;
-  color: $color-white;
-  font-family: $font-primary;
-  font-size: 16px;
-  margin-top: 10px;
-}
-.hero-scroll {
-  display: flex;
-  justify-content: center;
-  padding: 45px 0 53px 0;
-}
-.scroll-down {
-  background-color: $color-white;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-}
-.scroll-down-image {
-  align-items: center;
-  position: absolute;
-  padding: 18px 12px 15px 13px;
-}
-@media all and (min-width: 768px) {
+  .hero-text {
+    margin: 0 15px;
+    align-self: flex-end;
+  }
   .hero-title {
-    font-size: 80px;
-    line-height: 106px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    font-family: $font-secundary;
+    font-size: 42px;
+    line-height: 55px;
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 106px;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 100px;
+      line-height: 132px;
+      margin: 384px 275px 0 275px;
+    }
   }
   .hero-description {
-    font-size: 24px;
+    text-align: center;
+    color: $color-white;
+    font-family: $font-primary;
+    font-size: 16px;
     margin-top: 10px;
-  }
-}
-@media all and (min-width: 1280px) {
-  .hero-title {
-    font-size: 100px;
-    line-height: 132px;
-    margin: 384px 275px 0 275px;
-  }
-  .hero-description {
-    height: 32px;
-    font-size: 24px;
-    margin-top: 10px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+    @media all and (min-width: 1280px) {
+      height: 32px;
+      font-size: 24px;
+      margin-top: 10px;
+    }
   }
   .hero-scroll {
-    padding: 30px 0 13px 0;
+    display: flex;
+    justify-content: center;
+    padding: 45px 0 53px 0;
+    @media all and (min-width: 1280px) {
+      padding: 30px 0 13px 0;
+    }
+    .scroll-down {
+      background-color: $color-white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+    .scroll-down-image {
+      align-items: center;
+      position: absolute;
+      padding: 18px 12px 15px 13px;
+    }
   }
 }

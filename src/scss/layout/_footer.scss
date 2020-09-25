@@ -9,6 +9,16 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  @media all and (min-width: 768px) {
+    flex-direction: row-reverse;
+    height: 240px;
+    padding: 45px 39px 45px 39px;
+    text-align: start;
+    justify-content: space-between;
+  }
+  @media all and (min-width: 1280px) {
+    padding: 45px 370px;
+  }
 }
 .scroll-arrow {
   background-color: $color-white;
@@ -16,63 +26,54 @@
   height: 45px;
   border-radius: 50%;
   transform: translate(139px, -21px);
-}
-.scroll-arrow-image {
-  padding: 11px 11px 10px 13px;
+  @media all and (min-width: 768px) {
+    transform: translate(-311px, -69px);
+  }
+  @media all and (min-width: 1280px) {
+    transform: translate(-253px, -70px);
+  }
+  .scroll-arrow-image {
+    padding: 11px 11px 10px 13px;
+  }
 }
 .articles {
   text-transform: uppercase;
   padding: 37px 0 30px 0;
-}
-.twitter {
-  text-transform: uppercase;
-  padding-bottom: 30px;
-}
-.heart {
-  color: $color-orange;
-}
-
-@media all and (min-width: 768px) {
-  .footer-container {
-    flex-direction: row-reverse;
-    height: 240px;
-    padding: 45px 39px 45px 39px;
-    text-align: start;
-    justify-content: space-between;
-  }
-  .scroll-arrow {
-    transform: translate(-311px, -69px);
-  }
-  .articles {
+  @media all and (min-width: 768px) {
     position: relative;
     padding: 0 45px;
     right: 34%;
   }
-  .twitter {
+  @media all and (min-width: 1280px) {
+    width: 161px;
+  }
+}
+.twitter {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  @media all and (min-width: 768px) {
     position: relative;
     left: 34%;
   }
-  .small {
-    width: 210px;
-  }
-  .date {
-    font-size: 14px;
+  @media all and (min-width: 1280) {
+    width: 159px;
   }
 }
-@media all and (min-width: 1280px) {
-  .footer-container {
-    padding: 45px 370px;
+
+.heart {
+  color: $color-orange;
+}
+
+.small {
+  @media all and (min-width: 768px) {
+    width: 210px;
   }
-  .small {
+  @media all and (min-width: 1280px) {
     width: 560px;
   }
-  .scroll-arrow {
-    transform: translate(-253px, -70px);
-  }
-  .articles {
-    width: 161px;
-  }
-  .twitter {
-    width: 159px;
+  .date {
+    @media all and (min-width: 1280px) {
+      font-size: 14px;
+    }
   }
 }
