@@ -56,6 +56,13 @@
     border: solid 2px $color-orange;
     background-color: $color-white;
     padding: 6px 25px 6px 26px;
+    &:hover {
+      background-color: $color-lightblue;
+      border: solid white;
+      color: white;
+      font-size: 30px;
+      transition: color ease 1s;
+    }
     @media all and (min-width: 768px) {
       width: 91px;
       height: 45px;
@@ -72,22 +79,20 @@
   height: 624px;
   display: grid;
   padding: 30px 15px 60px 15px;
-  grid-template-columns: 55px 180px 55px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   row-gap: 35px;
   @media all and (min-width: 768px) {
     height: 397px;
     display: grid;
     padding: 0px 40px 0px 37.5px;
-    grid-template-columns: 213px 213px 213px;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 27.7px;
     row-gap: 0;
   }
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 1280px) {
     padding: 60px 81.2px;
     height: 427px;
-    grid-template-columns: 353.8px 353.8px 353.8px;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 26.2px;
   }
@@ -136,10 +141,19 @@
   padding-top: 10px;
   height: 45px;
   width: 184px;
+  position: relative;
+  justify-self: center;
   text-align: center;
   align-self: end;
   color: $color-white;
   border-radius: 22.5px;
+  &:hover {
+    background-color: $color-white;
+    border: solid $color-white;
+    color: $color-orange;
+    transition: color ease 1s;
+    font-weight: bold;
+  }
   @media all and (min-width: 768px) {
     width: 210px;
     margin-bottom: 60px;

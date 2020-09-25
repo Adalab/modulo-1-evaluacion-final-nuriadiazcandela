@@ -21,19 +21,30 @@
   }
 }
 .scroll-arrow {
-  background-color: $color-white;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  transform: translate(139px, -21px);
-  @media all and (min-width: 768px) {
-    transform: translate(-311px, -69px);
-  }
-  @media all and (min-width: 1280px) {
-    transform: translate(-253px, -70px);
+  display: flex;
+  justify-content: center;
+  .go-header {
+    background-color: $color-white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transform: translate(0, -23px);
+    @media all and (min-width: 768px) {
+      transform: translate(-315px, -67px);
+    }
+    @media all and (min-width: 1280px) {
+      transform: translate(-250px, -68px);
+    }
   }
   .scroll-arrow-image {
-    padding: 11px 11px 10px 13px;
+    align-items: center;
+    padding-top: 10px;
+    @media all and (min-width: 768px) {
+      padding-left: 10px;
+    }
+    @media all and (min-width: 1280px) {
+      padding-left: 12px;
+    }
   }
 }
 .articles {
