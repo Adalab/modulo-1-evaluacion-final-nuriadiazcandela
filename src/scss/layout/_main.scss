@@ -13,9 +13,11 @@
 .section-title {
   font-family: $font-secundary;
   font-size: 24px;
+  font-weight: bold;
 }
 .section-description {
   font-family: $font-primary;
+  color: $color-greybrown;
   font-size: 18px;
   line-height: 1.67;
   padding: 15px 0 30px 0;
@@ -23,8 +25,8 @@
 .buttom-go {
   width: 76px;
   height: 45px;
-  font-family: $font-secundary;
-  font-weight: 700;
+  font-family: $font-primary;
+  font-weight: 500;
   font-size: 20px;
   border-radius: 22.5px;
   color: $color-orange;
@@ -43,13 +45,17 @@
 }
 .reasons-title {
   font-family: $font-secundary;
+  font-weight: bold;
   font-size: 24px;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column: 1/4;
   text-align: center;
   padding: 10px;
 }
-
+.reason-subtitle {
+  font-family: $font-secundary;
+  font-size: 18px;
+  font-weight: bold;
+}
 .reason-one,
 .reason-two,
 .reason-three {
@@ -59,19 +65,36 @@
   line-height: 30px;
   text-align: center;
 }
-
 .more-reasons {
   background-color: $color-orange;
-  padding-top: 10px;
-  height: 45px;
-  text-align: center;
-  color: $color-white;
-  border-radius: 22.5px;
+  grid-column: 2;
   font-family: $font-primary;
   font-size: 20px;
-  grid-column: 2;
+  padding-top: 10px;
+  height: 45px;
+  width: 184px;
+  text-align: center;
+  align-self: end;
+  color: $color-white;
+  border-radius: 22.5px;
 }
 @media all and (min-width: 768px) {
+  .section-intro {
+    margin: 0 39px;
+    padding-bottom: 68px;
+  }
+  .section-title {
+    font-size: 26px;
+  }
+  .section-description {
+    font-size: 20px;
+    padding: 30px 0 38px 0;
+  }
+  .buttom-go {
+    width: 91px;
+    height: 45px;
+    padding: 8px 32.5px 8px 33.5px;
+  }
   .section-reasons {
     height: 397px;
     display: grid;
@@ -79,13 +102,15 @@
     grid-template-columns: 213px 213px 213px;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 27.7px;
+    row-gap: 0;
   }
   .reasons-title {
     font-size: 26px;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
-    padding: 10px;
+    line-height: 45px;
+    padding: 30px 0 45px 0;
+  }
+  .reason-subtitle {
+    font-size: 24px;
   }
   .reason-one {
     grid-column: 1;
@@ -102,8 +127,9 @@
   .reason-container {
     padding-top: 14px;
   }
-  .reasons-title {
-    padding: 30px 0 45px 0;
+  .more-reasons {
+    width: 210px;
+    margin-bottom: 60px;
   }
 }
 @media all and (min-width: 1200px) {
@@ -125,7 +151,7 @@
     padding: 10px 68px;
   }
   .section-reasons {
-    padding: 0 81.2px;
+    padding: 60px 81.2px;
     height: 427px;
     grid-template-columns: 353.8px 353.8px 353.8px;
     grid-template-rows: 1fr 1fr 1fr;
@@ -143,6 +169,6 @@
     width: 255px;
     height: 45px;
     text-transform: capitalize;
-    margin: 16px 45px;
+    margin: 0 45px;
   }
 }
