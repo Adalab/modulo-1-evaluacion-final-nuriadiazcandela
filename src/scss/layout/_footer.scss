@@ -35,6 +35,9 @@
     @media all and (min-width: 1280px) {
       transform: translate(-250px, -68px);
     }
+    @media all and (max-width: 768px) {
+      display: none;
+    }
   }
   .scroll-arrow-image {
     align-items: center;

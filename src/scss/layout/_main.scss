@@ -78,7 +78,7 @@
   background-color: $color-iceblue;
   height: 624px;
   display: grid;
-  padding: 30px 15px 60px 15px;
+  padding: 30px 15px 80px 15px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   row-gap: 35px;
@@ -134,7 +134,7 @@
   }
 }
 .more-reasons {
-  background-color: $color-orange;
+  background-color: $color-white;
   grid-column: 2;
   font-family: $font-primary;
   font-size: 20px;
@@ -145,7 +145,8 @@
   justify-self: center;
   text-align: center;
   align-self: end;
-  color: $color-white;
+  color: $color-orange;
+  border: solid 2px $color-orange;
   border-radius: 22.5px;
   &:hover {
     background-color: $color-white;
@@ -153,6 +154,10 @@
     color: $color-orange;
     transition: color ease 1s;
     font-weight: bold;
+  }
+  @media all and (max-width: 320px) {
+    display: inline-block;
+    margin-top: 20px;
   }
   @media all and (min-width: 768px) {
     width: 210px;
