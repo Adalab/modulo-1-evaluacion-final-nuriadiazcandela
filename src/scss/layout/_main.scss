@@ -15,6 +15,7 @@
     font-family: $font-primary;
     font-size: 14px;
     line-height: 30px;
+    text-transform: capitalize;
     @media all and (min-width: 1200px) {
       font-size: 16px;
     }
@@ -23,6 +24,7 @@
     font-family: $font-secundary;
     font-size: 24px;
     font-weight: bold;
+    text-transform: capitalize;
     @media all and (min-width: 768px) {
       font-size: 26px;
     }
